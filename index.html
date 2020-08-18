@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Search</title>
+  </head>
+  <body>
+    <h2 class="center">Username search</h2>
+    <div class="input-container">
+      <i class="material-icons prefix">account_circle</i>
+      <input
+        type="text"
+        name="inputUser"
+        id="inputUser"
+        placeholder="Type name here.."
+      />
+      <button class="waves-effect waves-light btn" id="inputButton">
+        Search
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="div-child">
+        <h4 class="center"><span id="totalUsers"></span> user(s) found</h4>
+        <div id="usersDiv"></div>
+      </div>
+
+      <div id="statistics" class="div-child">
+        <h4 class="center">Statistics</h4>
+        <h6>
+          Females:
+          <span id="females"></span>
+        </h6>
+        <h6>
+          Males:
+          <span id="males"></span>
+        </h6>
+        <h6>
+          Sum of the ages:
+          <span id="sum"></span>
+        </h6>
+        <h6>
+          Average Age:
+          <span id="average"></span>
+        </h6>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
